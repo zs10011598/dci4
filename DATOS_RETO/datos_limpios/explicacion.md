@@ -85,3 +85,25 @@ y encontramos 36 registros cuya fecha no coincidia por lo que corregimos.
 En cada fila se muestra la fecha, la semana en el dataset y la semana calculada por nosotros
 
 # DATOS SELLADO
+
+Último día de operacioes: 3 de octubre de 2019
+
+Se eliminaron 893 filas después del último día de operación registrado que no contenían información.
+
+Después de elminar las filas con la mayoría de infromación faltante se llenaron los datos faltantes en el dataset resultante con interpolaciones según los valores existentes.
+
+Las fechas tenían un formato escrito, es decir, estaban escritas con los nombres de los meses y días también por lo que se procesaron para obtener un formato homogéneo de fecha.
+
+Después de limpiar los datos se genera una columna nueva de semana a partir de las fechas y se compara con la columna original para determinar el número de valores no coincidentes que fueron los siguientes:
+
+ORIGINAL|CALCULADO|indice
+|:------------- |-------------:| -----:|
+NaN | 13 | 2019-03-26
+0.0 | 26 | 2019-06-24
+34.0 | 33 | 2019-08-18
+34.0 | 33 | 2019-08-18
+34.0 | 33 | 2019-08-18
+34.0 | 33 | 2019-08-18
+34.0 | 33 | 2019-08-18
+34.0 | 21 | 2019-05-24
+41.0 | 40 | 2019-10-01
